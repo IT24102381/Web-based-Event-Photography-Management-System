@@ -1,5 +1,7 @@
 package com.sliit.event_photography_management_system.service;
+
 import com.sliit.event_photography_management_system.entity.Ticket;
+
 import java.util.List;
 
 public interface TicketService {

@@ -1,0 +1,16 @@
+package com.sliit.event_photography_management_system.paymentStrategy;
+
+import com.sliit.event_photography_management_system.entity.Payment;
+import org.springframework.stereotype.Component;
+
+@Component("debitcard")
+public class DebitCardPaymentStrategy implements PaymentStrategy {
+
+    @Override
+    public void pay(Payment payment) {
+        System.out.println("Processing credit card payment for: " + payment.getName());
+
+
+        //  Debit card logic here
+    }
+}

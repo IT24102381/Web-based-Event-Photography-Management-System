@@ -6,28 +6,22 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "payment_new")
-public class Payment {
+
+public class GalleryImage {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long payemntid;
-
+    private Long id;
 
     private String name;
-    private String email;
-    private String cardNumber;
-    private LocalDate expiryDate;
-    private int cvv;
-    private String method;
-    private String price;
     private String type;
-    private String status;
+
+    @Lob
+    @Column(columnDefinition = "LONGBLOB")
+    private byte[] imageData;
 
 }

@@ -24,5 +24,6 @@ public class Ticket {
     private String tphone;
     private String tsubject;
     private String tmessage;
+    private String tstatus;
 
 }

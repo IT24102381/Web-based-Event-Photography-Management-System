@@ -1,6 +1,6 @@
 package com.sliit.event_photography_management_system.controller;
 
-import  com.sliit.event_photography_management_system.entity.Package;
+import com.sliit.event_photography_management_system.entity.Package;
 import com.sliit.event_photography_management_system.service.PackageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

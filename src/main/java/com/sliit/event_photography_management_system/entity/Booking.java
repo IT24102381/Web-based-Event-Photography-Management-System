@@ -13,6 +13,7 @@ import java.time.LocalTime;
 
 
 @Entity
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -32,6 +33,7 @@ public class Booking {
     private String location;
     private String photographer;
     private  String packageType;
+    private String status;
 
 
 
